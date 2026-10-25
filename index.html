@@ -33,18 +33,24 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Built-in Doha Skyline & Profile Photo -->
+  <!-- Hero Section with Glowing Doha Skyline & Profile Photo -->
   <section id="about" class="relative w-full pt-32 sm:pt-44 pb-20 sm:pb-32 px-4 sm:px-6 min-h-[90vh] flex items-center bg-dark-950">
     
-    <!-- Doha Skyline Vector Background (Guaranteed to load instantly) -->
-    <div class="absolute inset-0 -z-10 w-full h-full opacity-20 pointer-events-none flex items-end">
-      <svg class="w-full h-full object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
-        <path fill="#D4AF37" d="M0,400 L0,320 L30,320 L30,280 L40,280 L40,320 L70,320 L70,240 L85,240 L85,320 L120,320 L120,200 L140,160 L160,200 L160,320 L200,320 L200,120 L210,90 L220,120 L220,320 L270,320 L270,220 L290,180 L310,220 L310,320 L360,320 L360,150 L375,110 L390,150 L390,320 L440,320 L440,250 L460,210 L480,250 L480,320 L530,320 L530,140 L550,100 L570,140 L570,320 L620,320 L620,190 L640,150 L660,190 L660,320 L710,320 L710,110 L730,70 L750,110 L750,320 L800,320 L800,230 L820,190 L840,230 L840,320 L890,320 L890,160 L910,120 L930,160 L930,320 L980,320 L980,210 L1000,170 L1020,210 L1020,320 L1080,320 L1080,260 L1100,220 L1120,260 L1120,320 L1200,320 L1200,400 Z"></path>
+    <!-- Prominent Doha Skyline Vector Background -->
+    <div class="absolute inset-0 -z-10 w-full h-full opacity-45 pointer-events-none flex items-end">
+      <svg class="w-full h-3/4 object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="skylineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.6"/>
+            <stop offset="100%" stop-color="#030712" stop-opacity="0.95"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#skylineGrad)" d="M0,400 L0,300 L35,300 L35,260 L45,260 L45,300 L75,300 L75,220 L90,220 L90,300 L125,300 L125,180 L145,140 L165,180 L165,300 L205,300 L205,100 L215,70 L225,100 L225,300 L275,300 L275,200 L295,160 L315,200 L315,300 L365,300 L365,130 L380,90 L395,130 L395,300 L445,300 L445,230 L465,190 L485,230 L485,300 L535,300 L535,120 L555,80 L575,120 L575,300 L625,300 L625,170 L645,130 L665,170 L665,300 L715,300 L715,90 L735,50 L755,90 L755,300 L805,300 L805,210 L825,170 L845,210 L845,300 L895,300 L895,140 L915,100 L935,140 L935,300 L985,300 L985,190 L1005,150 L1025,190 L1025,300 L1085,300 L1085,240 L1105,200 L1125,240 L1125,300 L1200,300 L1200,400 Z"></path>
       </svg>
     </div>
 
-    <!-- Gradient Overlay for contrast -->
-    <div class="absolute inset-0 -z-20 bg-gradient-to-t from-dark-950 via-dark-900/90 to-dark-950"></div>
+    <!-- Dark Gradient Overlay for perfect readability -->
+    <div class="absolute inset-0 -z-20 bg-gradient-to-t from-dark-950 via-dark-950/80 to-dark-950/60"></div>
 
     <!-- Content Container -->
     <div class="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center z-10">
@@ -58,7 +64,7 @@
 
       <!-- Text Details -->
       <div class="md:col-span-2 text-center md:text-left">
-        <div class="inline-block px-3 py-1 bg-dark-900/90 border border-gold-500/40 text-gold-400 rounded-full text-xs font-semibold mb-4 sm:mb-6 shadow">
+        <div class="inline-block px-3 py-1 bg-dark-950/90 border border-gold-500/40 text-gold-400 rounded-full text-xs font-semibold mb-4 sm:mb-6 shadow">
           Available for Remote & Global Opportunities
         </div>
         <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-2 drop-shadow-md">
