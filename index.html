@@ -10,116 +10,112 @@
       theme: {
         extend: {
           colors: {
-            dark: { 950: '#02050A', 900: '#070C18', 800: '#121A2E', 700: '#1E2943' }
+            primary: '#0f172a',
+            accent: '#2563eb'
           }
         }
       }
     }
   </script>
 </head>
-<body class="bg-dark-900 text-slate-100 font-sans antialiased leading-relaxed overflow-x-hidden selection:bg-blue-500 selection:text-white">
+<body class="bg-white text-slate-800 font-sans antialiased leading-relaxed selection:bg-blue-600 selection:text-white">
 
-  <!-- Navigation -->
-  <nav class="border-b border-slate-800/85 bg-dark-950/90 backdrop-blur sticky w-full z-50 top-0">
+  <!-- Clean Professional Navigation -->
+  <nav class="border-b border-slate-200 bg-white/90 backdrop-blur sticky w-full z-50 top-0 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-      <span class="text-xl font-bold tracking-tight text-white cursor-pointer" onclick="switchPage('about')">Shabeeb<span class="text-blue-400">.</span></span>
-      <div class="space-x-3 sm:space-x-6 text-sm text-slate-300 flex font-medium">
-        <button onclick="switchPage('about')" id="nav-about" class="nav-btn transition text-blue-400">About</button>
-        <button onclick="switchPage('welcome-space')" id="nav-welcome-space" class="nav-btn transition hover:text-blue-400">Introduction</button>
-        <button onclick="switchPage('experience')" id="nav-experience" class="nav-btn transition hover:text-blue-400">Experience</button>
-        <button onclick="switchPage('services')" id="nav-services" class="nav-btn transition hover:text-blue-400">Services</button>
-        <button onclick="switchPage('faq')" id="nav-faq" class="nav-btn transition hover:text-blue-400">FAQ</button>
-        <button onclick="switchPage('contact')" id="nav-contact" class="nav-btn transition hover:text-blue-400">Contact</button>
+      <span class="text-xl font-bold tracking-tight text-slate-900 cursor-pointer" onclick="switchPage('about')">Shabeeb<span class="text-blue-600">.</span></span>
+      <div class="space-x-3 sm:space-x-6 text-sm text-slate-600 flex font-medium">
+        <button onclick="switchPage('about')" id="nav-about" class="nav-btn transition text-blue-600 font-semibold">About</button>
+        <button onclick="switchPage('welcome-space')" id="nav-welcome-space" class="nav-btn transition hover:text-blue-600">Introduction</button>
+        <button onclick="switchPage('experience')" id="nav-experience" class="nav-btn transition hover:text-blue-600">Experience</button>
+        <button onclick="switchPage('services')" id="nav-services" class="nav-btn transition hover:text-blue-600">Services</button>
+        <button onclick="switchPage('faq')" id="nav-faq" class="nav-btn transition hover:text-blue-600">FAQ</button>
+        <button onclick="switchPage('contact')" id="nav-contact" class="nav-btn transition hover:text-blue-600">Contact</button>
       </div>
     </div>
   </nav>
 
   <!-- PAGE 1: About -->
-  <div id="page-about" class="page-content min-h-[85vh] flex items-center relative overflow-hidden">
-    <div class="absolute inset-0 -z-20 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');"></div>
-    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-dark-950 via-dark-950/90 to-dark-900/80"></div>
-
-    <section class="relative w-full pt-16 sm:pt-24 pb-20 px-4 sm:px-6">
-      <div class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-        <div class="flex justify-center md:order-last">
-          <div class="relative w-44 h-44 sm:w-56 sm:h-56 rounded-2xl border-2 border-blue-500/40 overflow-hidden shadow-2xl bg-dark-800">
-            <img src="photo.jpg.jpeg" alt="Mohammed Shabeeb K S" class="w-full h-full object-cover">
-          </div>
+  <div id="page-about" class="page-content min-h-[85vh] flex items-center bg-white py-12">
+    <section class="max-w-6xl mx-auto w-full px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div class="flex justify-center md:order-last">
+        <div class="relative w-44 h-44 sm:w-56 sm:h-56 rounded-2xl border-2 border-slate-200 overflow-hidden shadow-lg bg-slate-50">
+          <img src="photo.jpg.jpeg" alt="Mohammed Shabeeb K S" class="w-full h-full object-cover">
         </div>
-        <div class="md:col-span-2 text-center md:text-left">
-          <div class="inline-block px-3 py-1 bg-dark-950/80 border border-slate-700 text-slate-300 rounded-full text-xs font-semibold mb-4 shadow backdrop-blur">
-            Based in Doha, Qatar • Available Globally
-          </div>
-          <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-2">
-            Mohammed Shabeeb K S
-          </h1>
-          <h2 class="text-lg sm:text-2xl font-bold text-blue-400 mb-4">
-            HR Administrator & Qatar Government PRO Coordinator
-          </h2>
-          <p class="text-sm sm:text-lg text-slate-300 max-w-2xl mb-6 font-medium">
-            3+ years of professional experience in Qatar handling corporate HR operations, Metrash government portals, multi-company liaison, legal documentation, and administrative reporting systems.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
-            <button onclick="switchPage('contact')" class="bg-blue-600 text-white font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-blue-500 transition text-center shadow-lg">Get in Touch</button>
-            <button onclick="switchPage('welcome-space')" class="border border-slate-700 bg-dark-800/80 text-slate-200 font-semibold px-6 py-3 rounded-lg hover:border-blue-500 transition text-center shadow-lg backdrop-blur">Explore Space</button>
-          </div>
+      </div>
+      <div class="md:col-span-2 text-center md:text-left">
+        <div class="inline-block px-3 py-1 bg-blue-50 border border-blue-100 text-blue-700 rounded-full text-xs font-semibold mb-4 shadow-sm">
+          Based in Doha, Qatar • Available Globally
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-2">
+          Mohammed Shabeeb K S
+        </h1>
+        <h2 class="text-lg sm:text-2xl font-bold text-blue-600 mb-4">
+          HR Administrator & Qatar Government PRO Coordinator
+        </h2>
+        <p class="text-sm sm:text-lg text-slate-600 max-w-2xl mb-6 font-medium">
+          3+ years of professional experience in Qatar handling corporate HR operations, Metrash government portals, multi-company liaison, legal documentation, and administrative reporting systems.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
+          <button onclick="switchPage('contact')" class="bg-blue-600 text-white font-bold px-6 sm:px-8 py-3 rounded-lg hover:bg-blue-700 transition text-center shadow-md">Get in Touch</button>
+          <button onclick="switchPage('welcome-space')" class="border border-slate-300 bg-white text-slate-700 font-semibold px-6 py-3 rounded-lg hover:border-blue-600 transition text-center shadow-sm">Explore Space</button>
         </div>
       </div>
     </section>
   </div>
 
   <!-- PAGE 2: Introduction -->
-  <div id="page-welcome-space" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6">
+  <div id="page-welcome-space" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6 bg-slate-50">
     <section class="max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <span class="text-xs uppercase tracking-widest text-blue-400 font-mono">INTRODUCTION</span>
-        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-2 mb-4">Welcome To My Space</h2>
-        <p class="text-slate-400 max-w-xl mx-auto text-sm sm:text-base">
+        <span class="text-xs uppercase tracking-widest text-blue-600 font-mono font-semibold">INTRODUCTION</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mt-2 mb-4">Welcome To My Space</h2>
+        <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base">
           Excellence is not an act, but a habit. Navigating corporate complexities with precision, legal compliance, and operational excellence in Doha, Qatar.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="bg-dark-800 border border-slate-800 p-8 rounded-2xl shadow-xl">
-          <span class="text-xs font-mono text-blue-400">CORE FOCUS</span>
-          <h3 class="text-2xl font-bold text-white mt-1 mb-4">Streamlining Corporate Operations</h3>
-          <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+        <div class="bg-white border border-slate-200 p-8 rounded-2xl shadow-sm">
+          <span class="text-xs font-mono text-blue-600 font-semibold">CORE FOCUS</span>
+          <h3 class="text-2xl font-bold text-slate-900 mt-1 mb-4">Streamlining Corporate Operations</h3>
+          <p class="text-slate-600 text-sm mb-6 leading-relaxed">
             Delivering structured corporate solutions through meticulous government liaison work, robust human resource management, and efficient documentation workflows.
           </p>
           <div class="grid grid-cols-2 gap-4 text-center">
-            <div class="bg-dark-900 p-4 rounded-xl border border-slate-800">
-              <span class="text-2xl font-extrabold text-blue-400">3+</span>
-              <p class="text-xs text-slate-400 mt-1">Years Experience</p>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+              <span class="text-2xl font-extrabold text-blue-600">3+</span>
+              <p class="text-xs text-slate-500 mt-1">Years Experience</p>
             </div>
-            <div class="bg-dark-900 p-4 rounded-xl border border-slate-800">
-              <span class="text-2xl font-extrabold text-blue-400">100%</span>
-              <p class="text-xs text-slate-400 mt-1">Compliance Focus</p>
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+              <span class="text-2xl font-extrabold text-blue-600">100%</span>
+              <p class="text-xs text-slate-500 mt-1">Compliance Focus</p>
             </div>
           </div>
         </div>
 
         <div>
-          <h3 class="text-2xl font-bold text-white mb-3">Hi, I am Mohammed Shabeeb K S</h3>
-          <p class="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed">
+          <h3 class="text-2xl font-bold text-slate-900 mb-3">Hi, I am Mohammed Shabeeb K S</h3>
+          <p class="text-slate-600 text-sm sm:text-base mb-6 leading-relaxed">
             An HR Administrator and Government PRO Coordinator dedicated to helping corporate entities streamline their legal operations, government documentation, and staff management in Doha, Qatar.
           </p>
 
           <div class="space-y-4">
             <div>
-              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-200">HR Operations & Administration</span><span class="text-blue-400">100%</span></div>
-              <div class="w-full bg-dark-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full rounded-full" style="width: 100%"></div></div>
+              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-700">HR Operations & Administration</span><span class="text-blue-600 font-semibold">100%</span></div>
+              <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-blue-600 h-full rounded-full" style="width: 100%"></div></div>
             </div>
             <div>
-              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-200">Qatar Government & Metrash PRO</span><span class="text-blue-400">100%</span></div>
-              <div class="w-full bg-dark-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full rounded-full" style="width: 100%"></div></div>
+              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-700">Qatar Government & Metrash PRO</span><span class="text-blue-600 font-semibold">100%</span></div>
+              <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-blue-600 h-full rounded-full" style="width: 100%"></div></div>
             </div>
             <div>
-              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-200">Multi-Company Documentation</span><span class="text-blue-400">100%</span></div>
-              <div class="w-full bg-dark-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full rounded-full" style="width: 100%"></div></div>
+              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-700">Multi-Company Documentation</span><span class="text-blue-600 font-semibold">100%</span></div>
+              <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-blue-600 h-full rounded-full" style="width: 100%"></div></div>
             </div>
             <div>
-              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-200">Excel & Administrative Reporting</span><span class="text-blue-400">100%</span></div>
-              <div class="w-full bg-dark-800 h-2 rounded-full overflow-hidden"><div class="bg-blue-500 h-full rounded-full" style="width: 100%"></div></div>
+              <div class="flex justify-between text-sm mb-1 font-medium"><span class="text-slate-700">Excel & Administrative Reporting</span><span class="text-blue-600 font-semibold">100%</span></div>
+              <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden"><div class="bg-blue-600 h-full rounded-full" style="width: 100%"></div></div>
             </div>
           </div>
         </div>
@@ -128,17 +124,17 @@
   </div>
 
   <!-- PAGE 3: Experience -->
-  <div id="page-experience" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6">
+  <div id="page-experience" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6 bg-white">
     <section class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-white mb-2">3+ Years Professional Expertise in Qatar</h2>
-      <p class="text-slate-400 mb-8 text-sm sm:text-base">Specialized in corporate HR, government relations, and multi-company operations.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-2">3+ Years Professional Expertise in Qatar</h2>
+      <p class="text-slate-600 mb-8 text-sm sm:text-base">Specialized in corporate HR, government relations, and multi-company operations.</p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="bg-dark-800 border border-slate-800 p-6 rounded-xl border-l-4 border-l-blue-500 flex flex-col justify-between">
+        <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl border-l-4 border-l-blue-600 shadow-sm flex flex-col justify-between">
           <div>
-            <span class="text-xs font-mono text-blue-400">QATAR GOVERNMENT LIAISON (PRO)</span>
-            <h3 class="text-xl font-bold text-white mt-1 mb-3">Metrash & Ministry Services</h3>
-            <ul class="text-sm text-slate-300 space-y-2">
+            <span class="text-xs font-mono text-blue-600 font-semibold">QATAR GOVERNMENT LIAISON (PRO)</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Metrash & Ministry Services</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
               <li>• Complete execution of Metrash services, visa issuance, and residence permit (QID) processing.</li>
               <li>• Government liaison with Ministry of Interior (MOI), Ministry of Commerce & Industry (MOCI), and Labor Ministry.</li>
               <li>• Managing Qatar Commercial Registration (CR), Computer Card renewals, and corporate setups.</li>
@@ -146,11 +142,11 @@
           </div>
         </div>
 
-        <div class="bg-dark-800 border border-slate-800 p-6 rounded-xl border-l-4 border-l-blue-500 flex flex-col justify-between">
+        <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl border-l-4 border-l-blue-600 shadow-sm flex flex-col justify-between">
           <div>
-            <span class="text-xs font-mono text-blue-400">CORPORATE HR ADMINISTRATION</span>
-            <h3 class="text-xl font-bold text-white mt-1 mb-3">Human Resources Management</h3>
-            <ul class="text-sm text-slate-300 space-y-2">
+            <span class="text-xs font-mono text-blue-600 font-semibold">CORPORATE HR ADMINISTRATION</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">Human Resources Management</h3>
+            <ul class="text-sm text-slate-600 space-y-2">
               <li>• Employee onboarding, employment contract legalities, and documentation compliance.</li>
               <li>• Payroll management, multi-company salary reporting, and personnel record systems.</li>
               <li>• Custom HR management tracking and reporting workflows.</li>
@@ -162,96 +158,96 @@
   </div>
 
   <!-- PAGE 4: Services -->
-  <div id="page-services" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6">
+  <div id="page-services" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6 bg-slate-50">
     <section class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-white mb-2">Core Services</h2>
-      <p class="text-slate-400 mb-8 text-sm sm:text-base">Professional administrative and coordination solutions.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-2">Core Services</h2>
+      <p class="text-slate-600 mb-8 text-sm sm:text-base">Professional administrative and coordination solutions.</p>
       
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-dark-800 border border-slate-800 p-6 rounded-xl hover:border-blue-500/50 transition">
-          <h3 class="text-blue-400 font-bold text-lg mb-2">Metrash & PRO Operations</h3>
-          <p class="text-sm text-slate-300">Complete handling of Metrash, ministry documentations, CR renewals, and government workflows in Qatar.</p>
+        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:border-blue-600 transition shadow-sm">
+          <h3 class="text-blue-600 font-bold text-lg mb-2">Metrash & PRO Operations</h3>
+          <p class="text-sm text-slate-600">Complete handling of Metrash, ministry documentations, CR renewals, and government workflows in Qatar.</p>
         </div>
 
-        <div class="bg-dark-800 border border-slate-800 p-6 rounded-xl hover:border-blue-500/50 transition">
-          <h3 class="text-blue-400 font-bold text-lg mb-2">HR Management</h3>
-          <p class="text-sm text-slate-300">Staff management, HR policies, contract creation, and multi-company administrative workflows.</p>
+        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:border-blue-600 transition shadow-sm">
+          <h3 class="text-blue-600 font-bold text-lg mb-2">HR Management</h3>
+          <p class="text-sm text-slate-600">Staff management, HR policies, contract creation, and multi-company administrative workflows.</p>
         </div>
 
-        <div class="bg-dark-800 border border-slate-800 p-6 rounded-xl hover:border-blue-500/50 transition">
-          <h3 class="text-blue-400 font-bold text-lg mb-2">Corporate Documentation</h3>
-          <p class="text-sm text-slate-300">Handling official letters, legal paperwork, and reporting records for businesses in Doha.</p>
+        <div class="bg-white border border-slate-200 p-6 rounded-xl hover:border-blue-600 transition shadow-sm">
+          <h3 class="text-blue-600 font-bold text-lg mb-2">Corporate Documentation</h3>
+          <p class="text-sm text-slate-600">Handling official letters, legal paperwork, and reporting records for businesses in Doha.</p>
         </div>
       </div>
     </section>
   </div>
 
   <!-- PAGE 5: FAQ -->
-  <div id="page-faq" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6">
+  <div id="page-faq" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6 bg-white">
     <section class="max-w-6xl mx-auto">
-      <span class="text-xs uppercase tracking-widest text-blue-400 font-mono">ANY QUESTIONS</span>
-      <h2 class="text-3xl font-serif font-bold text-white mt-2 mb-4">Frequently Asked Questions</h2>
-      <p class="text-slate-400 text-sm mb-8">Explore our Frequently Asked Questions to find quick answers and valuable insights on Qatar corporate and HR administration.</p>
+      <span class="text-xs uppercase tracking-widest text-blue-600 font-mono font-semibold">ANY QUESTIONS</span>
+      <h2 class="text-3xl font-serif font-bold text-slate-900 mt-2 mb-4">Frequently Asked Questions</h2>
+      <p class="text-slate-600 text-sm mb-8">Explore our Frequently Asked Questions to find quick answers and valuable insights on Qatar corporate and HR administration.</p>
       
       <div class="space-y-4 max-w-3xl">
-        <div class="bg-dark-800 border border-slate-800 rounded-lg p-4">
-          <div class="font-semibold text-white text-sm">How long have you been handling HR & PRO in Qatar?</div>
-          <p class="text-xs text-slate-300 mt-2">I have been working in this industry for over 3+ years, managing government liaison and HR workflows.</p>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 shadow-sm">
+          <div class="font-semibold text-slate-900 text-sm">How long have you been handling HR & PRO in Qatar?</div>
+          <p class="text-xs text-slate-600 mt-2">I have been working in this industry for over 3+ years, managing government liaison and HR workflows.</p>
         </div>
 
-        <div class="bg-dark-800 border border-slate-800 rounded-lg p-4">
-          <div class="font-semibold text-white text-sm">What are the must-haves for new companies in Qatar?</div>
-          <p class="text-xs text-slate-300 mt-2">Essential requirements include valid Commercial Registration (CR), Computer Card (Establishment Card), proper Labor Ministry registration, compliant employee contracts, and active Metrash2 corporate access.</p>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 shadow-sm">
+          <div class="font-semibold text-slate-900 text-sm">What are the must-haves for new companies in Qatar?</div>
+          <p class="text-xs text-slate-600 mt-2">Essential requirements include valid Commercial Registration (CR), Computer Card (Establishment Card), proper Labor Ministry registration, compliant employee contracts, and active Metrash2 corporate access.</p>
         </div>
 
-        <div class="bg-dark-800 border border-slate-800 rounded-lg p-4">
-          <div class="font-semibold text-white text-sm">How do you handle Metrash and Ministry processing?</div>
-          <p class="text-xs text-slate-300 mt-2">I manage end-to-end government processing via Metrash2 portals and coordinate directly with the Ministry of Interior (MOI) and MOCI to ensure timely renewals and legal compliance.</p>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 shadow-sm">
+          <div class="font-semibold text-slate-900 text-sm">How do you handle Metrash and Ministry processing?</div>
+          <p class="text-xs text-slate-600 mt-2">I manage end-to-end government processing via Metrash2 portals and coordinate directly with the Ministry of Interior (MOI) and MOCI to ensure timely renewals and legal compliance.</p>
         </div>
 
-        <div class="bg-dark-800 border border-slate-800 rounded-lg p-4">
-          <div class="font-semibold text-white text-sm">What's the best way to reach you?</div>
-          <p class="text-xs text-slate-300 mt-2">You can reach me directly via WhatsApp at +974 71206671 or email me at serveeaseqtr@gmail.com for prompt professional assistance.</p>
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-4 shadow-sm">
+          <div class="font-semibold text-slate-900 text-sm">What's the best way to reach you?</div>
+          <p class="text-xs text-slate-600 mt-2">You can reach me directly via WhatsApp at +974 71206671 or email me at serveeaseqtr@gmail.com for prompt professional assistance.</p>
         </div>
       </div>
     </section>
   </div>
 
   <!-- PAGE 6: Contact -->
-  <div id="page-contact" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6">
-    <section class="max-w-3xl mx-auto bg-dark-800 border border-slate-800 p-8 rounded-2xl shadow-xl">
-      <h3 class="text-2xl font-serif font-bold text-white mb-2">STILL HAVE A QUESTION?</h3>
-      <p class="text-slate-400 text-xs sm:text-sm mb-4">Fill out your message below or connect directly through phone and email.</p>
+  <div id="page-contact" class="page-content hidden min-h-[85vh] py-16 px-4 sm:px-6 bg-slate-50">
+    <section class="max-w-3xl mx-auto bg-white border border-slate-200 p-8 rounded-2xl shadow-md">
+      <h3 class="text-2xl font-serif font-bold text-slate-900 mb-2">STILL HAVE A QUESTION?</h3>
+      <p class="text-slate-600 text-xs sm:text-sm mb-4">Fill out your message below or connect directly through phone and email.</p>
       
-      <div class="flex flex-col sm:flex-row gap-3 mb-6 p-3 bg-dark-900 rounded-xl border border-slate-700/60 text-xs">
-        <a href="https://wa.me/97471206671" target="_blank" class="hover:text-blue-400 text-slate-200 transition flex items-center gap-2 font-medium">
+      <div class="flex flex-col sm:flex-row gap-3 mb-6 p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs">
+        <a href="https://wa.me/97471206671" target="_blank" class="hover:text-blue-600 text-slate-700 transition flex items-center gap-2 font-medium">
           📞 +974 71206671
         </a>
-        <span class="hidden sm:inline text-slate-600">|</span>
-        <a href="mailto:serveeaseqtr@gmail.com" class="hover:text-blue-400 text-slate-200 transition flex items-center gap-2 font-medium">
+        <span class="hidden sm:inline text-slate-300">|</span>
+        <a href="mailto:serveeaseqtr@gmail.com" class="hover:text-blue-600 text-slate-700 transition flex items-center gap-2 font-medium">
           ✉️ serveeaseqtr@gmail.com
         </a>
       </div>
 
       <div class="space-y-4">
         <div>
-          <input type="text" id="formName" placeholder="Your Name*" class="w-full bg-dark-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-blue-500 outline-none transition">
+          <input type="text" id="formName" placeholder="Your Name*" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:border-blue-600 outline-none transition">
         </div>
         <div>
-          <input type="email" id="formEmail" placeholder="Your Email*" class="w-full bg-dark-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-blue-500 outline-none transition">
+          <input type="email" id="formEmail" placeholder="Your Email*" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:border-blue-600 outline-none transition">
         </div>
         <div>
-          <input type="tel" id="formPhone" placeholder="Your Number*" class="w-full bg-dark-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-blue-500 outline-none transition">
+          <input type="tel" id="formPhone" placeholder="Your Number*" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:border-blue-600 outline-none transition">
         </div>
         <div>
-          <textarea id="formMessage" rows="4" placeholder="Enter your message" class="w-full bg-dark-900 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-blue-500 outline-none transition resize-none"></textarea>
+          <textarea id="formMessage" rows="4" placeholder="Enter your message" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-4 py-3 text-sm text-slate-900 focus:border-blue-600 outline-none transition resize-none"></textarea>
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-          <button onclick="sendViaWhatsApp()" class="w-full bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-4 rounded-lg transition text-xs sm:text-sm shadow-lg flex items-center justify-center gap-2">
+          <button onclick="sendViaWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-lg transition text-xs sm:text-sm shadow-sm flex items-center justify-center gap-2">
             💬 SEND VIA WHATSAPP
           </button>
-          <button onclick="sendViaEmail()" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-lg transition text-xs sm:text-sm shadow-lg flex items-center justify-center gap-2">
+          <button onclick="sendViaEmail()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition text-xs sm:text-sm shadow-sm flex items-center justify-center gap-2">
             ✉️ SEND EMAIL
           </button>
         </div>
@@ -272,14 +268,14 @@
 
       const navButtons = document.querySelectorAll('.nav-btn');
       navButtons.forEach(btn => {
-        btn.classList.remove('text-blue-400');
-        btn.classList.add('hover:text-blue-400');
+        btn.classList.remove('text-blue-600', 'font-semibold');
+        btn.classList.add('hover:text-blue-600');
       });
 
       const activeBtn = document.getElementById('nav-' + pageId);
       if (activeBtn) {
-        activeBtn.classList.add('text-blue-400');
-        activeBtn.classList.remove('hover:text-blue-400');
+        activeBtn.classList.add('text-blue-600', 'font-semibold');
+        activeBtn.classList.remove('hover:text-blue-600');
       }
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -310,7 +306,7 @@
   </script>
 
   <!-- Footer -->
-  <footer class="bg-dark-950 border-t border-slate-800 py-12 px-4 sm:px-6">
+  <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 py-12 px-4 sm:px-6">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-8">
 
       <div class="text-center md:text-left">
@@ -338,7 +334,7 @@
 
     </div>
 
-    <div class="max-w-6xl mx-auto border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
       <p>© 2026 MOHAMMED SHABEEB K S. All rights reserved.</p>
       <div class="flex gap-4 mt-2 sm:mt-0">
         <a href="#" class="hover:text-blue-400">Terms & Condition</a>
