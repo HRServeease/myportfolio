@@ -196,31 +196,140 @@
     </div>
   </section>
 
-  <!-- FAQ & Secure Contact Form Section -->
+  <!-- FAQ & WhatsApp Contact Form Section -->
   <section id="faq" class="py-20 px-4 sm:px-6 max-w-6xl mx-auto border-t border-slate-800/60">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
       
-      <!-- FAQ Left Side -->
+      <!-- FAQ Left Side (All 4 Questions Fully Visible) -->
       <div>
         <span class="text-xs uppercase tracking-widest text-gold-500 font-mono">ANY QUESTIONS</span>
         <h2 class="text-3xl font-serif font-bold text-white mt-2 mb-4">Frequently Asked Questions !!</h2>
         <p class="text-slate-400 text-sm mb-8">Explore our Frequently Asked Questions to find quick answers and valuable insights on Qatar corporate and HR administration.</p>
         
         <div class="space-y-4">
-          <div class="bg-dark-800/80 border border-slate-800 rounded-lg p-4">
+          <!-- Question 1 -->
+          <div class="bg-dark-800/90 border border-slate-800 rounded-lg p-4">
             <div class="flex justify-between items-center font-semibold text-white text-sm">
               <span>How long have you been handling HR & PRO in Qatar?</span>
-              <span class="text-gold-500">▲</span>
+              <span class="text-gold-500 font-bold">▲</span>
             </div>
             <p class="text-xs text-slate-300 mt-2">I have been working in this industry for over 3+ years, managing government liaison and HR workflows.</p>
           </div>
 
-          <div class="bg-dark-800/80 border border-slate-800 rounded-lg p-4">
+          <!-- Question 2 -->
+          <div class="bg-dark-800/90 border border-slate-800 rounded-lg p-4">
             <div class="flex justify-between items-center font-semibold text-white text-sm">
               <span>What are the must-haves for new companies in Qatar?</span>
-              <span class="text-gold-500">▼</span>
+              <span class="text-gold-500 font-bold">▼</span>
             </div>
             <p class="text-xs text-slate-300 mt-2">Essential requirements include valid Commercial Registration (CR), Computer Card (Establishment Card), proper Labor Ministry registration, compliant employee contracts, and active Metrash2 corporate access.</p>
           </div>
 
-          <div
+          <!-- Question 3 -->
+          <div class="bg-dark-800/90 border border-slate-800 rounded-lg p-4">
+            <div class="flex justify-between items-center font-semibold text-white text-sm">
+              <span>How do you handle Metrash and Ministry processing?</span>
+              <span class="text-gold-500 font-bold">▼</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-2">I manage end-to-end government processing via Metrash2 portals and coordinate directly with the Ministry of Interior (MOI) and MOCI to ensure timely renewals and legal compliance.</p>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="bg-dark-800/90 border border-slate-800 rounded-lg p-4">
+            <div class="flex justify-between items-center font-semibold text-white text-sm">
+              <span>What's the best way to reach you?</span>
+              <span class="text-gold-500 font-bold">▼</span>
+            </div>
+            <p class="text-xs text-slate-300 mt-2">You can reach me directly via WhatsApp at +974 71206671 or email me at shabeebmuhammed59@gmail.com for prompt professional assistance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Right Side (WhatsApp Direct) -->
+      <div id="contact" class="bg-dark-800 border border-slate-800 p-8 rounded-2xl shadow-xl">
+        <h3 class="text-2xl font-serif font-bold text-white mb-2">STILL HAVE A QUESTION?</h3>
+        <p class="text-slate-400 text-xs sm:text-sm mb-6">Curiosity unsatisfied? We're here to help! Reach out to us for personalized assistance.</p>
+        
+        <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+          <div>
+            <input type="text" id="formName" placeholder="Your Name*" required class="w-full bg-dark-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-gold-500 outline-none transition">
+          </div>
+          <div>
+            <input type="email" id="formEmail" placeholder="Your Email*" required class="w-full bg-dark-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-gold-500 outline-none transition">
+          </div>
+          <div>
+            <input type="tel" id="formPhone" placeholder="Your Number*" class="w-full bg-dark-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-gold-500 outline-none transition">
+          </div>
+          <div>
+            <textarea id="formMessage" rows="4" placeholder="Enter your message" required class="w-full bg-dark-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:border-gold-500 outline-none transition resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-white text-dark-950 font-bold py-3 rounded-lg hover:bg-gold-500 transition text-sm shadow-md">
+            SUBMIT QUESTIONS VIA WHATSAPP
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WhatsApp Script -->
+  <script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+      const name = document.getElementById('formName').value;
+      const email = document.getElementById('formEmail').value;
+      const phone = document.getElementById('formPhone').value;
+      const message = document.getElementById('formMessage').value;
+
+      const text = `*New Website Inquiry*%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Email:* ${encodeURIComponent(email)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Message:* ${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://wa.me/97471206671?text=${text}`;
+      
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer class="bg-dark-950 border-t border-slate-800 py-12 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-8">
+      
+      <div>
+        <h4 class="text-white font-bold mb-2">Newsletter</h4>
+        <p class="text-xs text-slate-400 mb-4">Subscribe to our newsletter for insights on business and corporate operations in Qatar.</p>
+        <div class="flex gap-2">
+          <input type="email" placeholder="Enter your email*" class="bg-dark-900 border border-slate-700 text-xs px-3 py-2 rounded text-white w-full outline-none focus:border-gold-500">
+          <button class="bg-white text-dark-950 text-xs font-bold px-4 py-2 rounded hover:bg-gold-500 transition">SUBSCRIBE</button>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <span class="text-lg font-bold tracking-tight text-white">Shabeeb<span class="text-gold-500">.</span></span>
+        <p class="text-xs text-slate-400 mt-2 max-w-xs mx-auto">
+          HR Administrator and Government PRO Coordinator dedicated to corporate excellence in Doha, Qatar.
+        </p>
+        <p class="text-xs text-slate-500 mt-2">📞 +974 71206671 | ✉️ shabeebmuhammed59@gmail.com</p>
+      </div>
+
+      <div class="text-center md:text-right">
+        <h4 class="text-white font-bold mb-2">Quick Navigation</h4>
+        <ul class="text-xs text-slate-400 space-y-1.5">
+          <li><a href="#about" class="hover:text-gold-500 transition">About Profile</a></li>
+          <li><a href="#welcome-space" class="hover:text-gold-500 transition">Introduction & Skills</a></li>
+          <li><a href="#experience" class="hover:text-gold-500 transition">PRO & HR Experience</a></li>
+          <li><a href="#services" class="hover:text-gold-500 transition">Services Offered</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="max-w-6xl mx-auto border-t border-slate-800/80 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+      <p>© 2026 MOHAMMED SHABEEB K S. All rights reserved.</p>
+      <div class="flex gap-4 mt-2 sm:mt-0">
+        <a href="#" class="hover:text-gold-500">Terms & Condition</a>
+        <span>|</span>
+        <a href="#" class="hover:text-gold-500">Privacy policy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
