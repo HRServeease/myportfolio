@@ -10,7 +10,7 @@
       theme: {
         extend: {
           colors: {
-            dark: { 950: '#02050A', 900: '#070C18', 800: '#121A2E', 700: '#1E2943' },
+            dark: { 950: '#030712', 900: '#0B0F19', 800: '#151C2C', 700: '#222B42' },
             gold: { 500: '#D4AF37', 400: '#F3E5AB' }
           }
         }
@@ -33,25 +33,14 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Glowing Doha Skyline & Profile Photo -->
-  <section id="about" class="relative w-full pt-32 sm:pt-44 pb-20 sm:pb-32 px-4 sm:px-6 min-h-[90vh] flex items-center bg-dark-950">
+  <!-- Hero Section with Local Doha Skyline Background & Profile Photo -->
+  <section id="about" class="relative w-full pt-32 sm:pt-44 pb-20 sm:pb-32 px-4 sm:px-6 min-h-[90vh] flex items-center">
     
-    <!-- Glowing Doha Skyline Vector Background -->
-    <div class="absolute inset-0 -z-10 w-full h-full opacity-60 pointer-events-none flex items-end">
-      <svg class="w-full h-4/5 object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="goldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#F3E5AB" stop-opacity="0.85"/>
-            <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.65"/>
-            <stop offset="100%" stop-color="#070C18" stop-opacity="0.95"/>
-          </linearGradient>
-        </defs>
-        <path fill="url(#goldGlow)" d="M0,400 L0,280 L35,280 L35,240 L45,240 L45,280 L75,280 L75,200 L90,200 L90,280 L125,280 L125,160 L145,120 L165,160 L165,280 L205,280 L205,80 L215,50 L225,80 L225,280 L275,280 L275,180 L295,140 L315,180 L315,280 L365,280 L365,110 L380,70 L395,110 L395,280 L445,280 L445,210 L465,170 L485,210 L485,280 L535,280 L535,100 L555,60 L575,100 L575,280 L625,280 L625,150 L645,110 L665,150 L665,280 L715,280 L715,70 L735,30 L755,70 L755,280 L805,280 L805,190 L825,150 L845,190 L845,280 L895,280 L895,120 L915,80 L935,120 L935,280 L985,280 L985,170 L1005,130 L1025,170 L1025,280 L1085,280 L1085,220 L1105,180 L1125,220 L1125,280 L1200,280 L1200,400 Z"></path>
-      </svg>
+    <!-- Local Doha Skyline Image Background -->
+    <div class="absolute inset-0 -z-10 w-full h-full overflow-hidden">
+      <img src="doha-bg.jpg" alt="Doha Skyline" class="w-full h-full object-cover opacity-35" onerror="this.style.display='none'">
+      <div class="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-900/80 to-dark-950/60"></div>
     </div>
-
-    <!-- Soft Overlay for depth -->
-    <div class="absolute inset-0 -z-20 bg-gradient-to-t from-dark-950 via-dark-950/70 to-dark-950/50"></div>
 
     <!-- Content Container -->
     <div class="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center z-10">
