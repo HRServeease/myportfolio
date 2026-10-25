@@ -10,7 +10,7 @@
       theme: {
         extend: {
           colors: {
-            dark: { 950: '#030712', 900: '#0B0F19', 800: '#151C2C', 700: '#222B42' },
+            dark: { 950: '#02050A', 900: '#070C18', 800: '#121A2E', 700: '#1E2943' },
             gold: { 500: '#D4AF37', 400: '#F3E5AB' }
           }
         }
@@ -36,21 +36,22 @@
   <!-- Hero Section with Glowing Doha Skyline & Profile Photo -->
   <section id="about" class="relative w-full pt-32 sm:pt-44 pb-20 sm:pb-32 px-4 sm:px-6 min-h-[90vh] flex items-center bg-dark-950">
     
-    <!-- Prominent Doha Skyline Vector Background -->
-    <div class="absolute inset-0 -z-10 w-full h-full opacity-45 pointer-events-none flex items-end">
-      <svg class="w-full h-3/4 object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
+    <!-- Glowing Doha Skyline Vector Background -->
+    <div class="absolute inset-0 -z-10 w-full h-full opacity-60 pointer-events-none flex items-end">
+      <svg class="w-full h-4/5 object-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
         <defs>
-          <linearGradient id="skylineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#030712" stop-opacity="0.95"/>
+          <linearGradient id="goldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#F3E5AB" stop-opacity="0.85"/>
+            <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.65"/>
+            <stop offset="100%" stop-color="#070C18" stop-opacity="0.95"/>
           </linearGradient>
         </defs>
-        <path fill="url(#skylineGrad)" d="M0,400 L0,300 L35,300 L35,260 L45,260 L45,300 L75,300 L75,220 L90,220 L90,300 L125,300 L125,180 L145,140 L165,180 L165,300 L205,300 L205,100 L215,70 L225,100 L225,300 L275,300 L275,200 L295,160 L315,200 L315,300 L365,300 L365,130 L380,90 L395,130 L395,300 L445,300 L445,230 L465,190 L485,230 L485,300 L535,300 L535,120 L555,80 L575,120 L575,300 L625,300 L625,170 L645,130 L665,170 L665,300 L715,300 L715,90 L735,50 L755,90 L755,300 L805,300 L805,210 L825,170 L845,210 L845,300 L895,300 L895,140 L915,100 L935,140 L935,300 L985,300 L985,190 L1005,150 L1025,190 L1025,300 L1085,300 L1085,240 L1105,200 L1125,240 L1125,300 L1200,300 L1200,400 Z"></path>
+        <path fill="url(#goldGlow)" d="M0,400 L0,280 L35,280 L35,240 L45,240 L45,280 L75,280 L75,200 L90,200 L90,280 L125,280 L125,160 L145,120 L165,160 L165,280 L205,280 L205,80 L215,50 L225,80 L225,280 L275,280 L275,180 L295,140 L315,180 L315,280 L365,280 L365,110 L380,70 L395,110 L395,280 L445,280 L445,210 L465,170 L485,210 L485,280 L535,280 L535,100 L555,60 L575,100 L575,280 L625,280 L625,150 L645,110 L665,150 L665,280 L715,280 L715,70 L735,30 L755,70 L755,280 L805,280 L805,190 L825,150 L845,190 L845,280 L895,280 L895,120 L915,80 L935,120 L935,280 L985,280 L985,170 L1005,130 L1025,170 L1025,280 L1085,280 L1085,220 L1105,180 L1125,220 L1125,280 L1200,280 L1200,400 Z"></path>
       </svg>
     </div>
 
-    <!-- Dark Gradient Overlay for perfect readability -->
-    <div class="absolute inset-0 -z-20 bg-gradient-to-t from-dark-950 via-dark-950/80 to-dark-950/60"></div>
+    <!-- Soft Overlay for depth -->
+    <div class="absolute inset-0 -z-20 bg-gradient-to-t from-dark-950 via-dark-950/70 to-dark-950/50"></div>
 
     <!-- Content Container -->
     <div class="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center z-10">
