@@ -10,7 +10,7 @@
       theme: {
         extend: {
           colors: {
-            navy: { 950: '#040812', 900: '#0B132B', 800: '#1C2541', 700: '#2A3A5E' },
+            navy: { 950: '#050B14', 900: '#0A0F1D', 800: '#151D30', 700: '#222D44' },
             gold: { 500: '#D4AF37', 400: '#F3E5AB' }
           }
         }
@@ -33,12 +33,14 @@
     </div>
   </nav>
 
-  <!-- Hero Section with Premium Corporate Background & Profile Photo -->
-  <section id="about" class="relative w-full pt-32 sm:pt-44 pb-16 sm:pb-28 px-4 sm:px-6 min-h-[90vh] flex items-center bg-gradient-to-br from-navy-950 via-navy-900 to-navy-800">
+  <!-- Hero Section with Doha Skyline Background & Profile Photo -->
+  <section id="about" class="relative w-full pt-32 sm:pt-44 pb-16 sm:pb-28 px-4 sm:px-6 min-h-[90vh] flex items-center">
     
-    <!-- Decorative Glow Effects representing Doha City Lights -->
-    <div class="absolute top-1/4 left-10 w-72 h-72 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <!-- Direct Doha Skyline Background Image -->
+    <div class="absolute inset-0 -z-10 w-full h-full">
+      <img src="https://images.unsplash.com/photo-1581012771965-d0ff38dc41a2?q=80&w=1920&auto=format&fit=crop" alt="Doha City Skyline" class="w-full h-full object-cover opacity-50">
+      <div class="absolute inset-0 bg-navy-950/75"></div>
+    </div>
 
     <!-- Content Container -->
     <div class="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center z-10">
@@ -61,7 +63,7 @@
         <h2 class="text-lg sm:text-2xl font-bold text-gold-500 mb-4 drop-shadow">
           HR Operations & Full-Stack Web Solutions
         </h2>
-        <p class="text-sm sm:text-lg text-slate-200 max-w-2xl mb-6 sm:mb-8 font-normal">
+        <p class="text-sm sm:text-lg text-slate-100 max-w-2xl mb-6 sm:mb-8 font-medium drop-shadow">
           Based in Doha, Qatar with 3+ years of professional expertise bridging corporate human resources administration, government liaison operations, and modern full-stack application development.
         </p>
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
